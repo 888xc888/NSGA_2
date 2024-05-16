@@ -1,0 +1,40 @@
+# 本文件存储评价指标和相应的零件的具体打分数值
+
+
+################## 拆卸复杂性评价指标（打分规则不记录，这里记录专家具体打分） ##################
+disassembly_complexity:
+  screw_normal:
+    #                normal
+    #  weights	      tool	         force
+    - [[1,2,3],     [1.5,3,4.5],  [1,2,3]    ] # operator
+    - [[0.5,1,1.5], [0.5,1,1.5],  [0.5,1,1.5]] # robots
+  screw_slippage:
+    #              medium	                  //                 severity
+    #  weights	      tool	         force    //      weights	           tool	        force
+    - [[1,2,3],     [1.5,3,4.5],     [3,4.5,6],      [1,2,3],          [3,5,7],        [5,7,9]   ]  # operator
+    - [[0.5,1,1.5], [80,100,120],    [1,1.5,2],    [0.5,1,1.5],     [150,170,190],    [1.5,2,2.5]]  # robots
+  screw_rust:
+    #              medium	                //             severity
+    #  weights	      tool	         force  //   weights	        tool	       force
+    - [[1,2,3],     [1.5,3,4.5],     [3,4.5,6],     [1,2,3],       [3,5,7],        [5,7,9]]     # operator
+    - [[0.5,1,1.5], [80,100,120],    [1,1.5,2],   [0.5,1,1.5],   [150,170,190],  [1.5,2,2.5]]   # robots
+
+################## 人体工程学评价指（打分规则不记录，这里记录专家具体打分） ##################
+ergonomics:
+ screw_normal:
+  - [1]   # Intensity of exertion
+  - [0.5] # Duration of exertion
+  - [1]   # Body posture
+  - [1]   # Speed of work
+ screw_slippage:
+  # medium, severity
+  - [6,     13] # Intensity of exertion
+  - [1,      3] # Duration of exertion
+  - [1.5,    3] # Body posture
+  - [1,      1] # Speed of work
+ screw_rust:
+  # medium, severity
+  - [6,      9] # Intensity of exertion
+  - [1,      2] # Duration of exertion
+  - [1.5,    2] # Body posture
+  - [1,      1] # Speed of work

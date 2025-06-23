@@ -1,0 +1,635 @@
+{
+  "metadata": {
+    "algorithm": "NSGA-II",
+    "problem": "Disassembly Sequence Optimization",
+    "generation": 250,
+    "population_size": 20,
+    "timestamp": "20250623_232456",
+    "objectives": [
+      "disassembly_complexity",
+      "ergonomics"
+    ]
+  },
+  "results": [
+    {
+      "solution_id": 1,
+      "rank": 1,
+      "disassembly_complexity": 1079.0,
+      "ergonomics": 0.0,
+      "crowding_distance": Infinity,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "solution_id": 2,
+      "rank": 1,
+      "disassembly_complexity": 1079.0,
+      "ergonomics": 0.0,
+      "crowding_distance": Infinity,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "solution_id": 3,
+      "rank": 1,
+      "disassembly_complexity": 98.0,
+      "ergonomics": 101.0,
+      "crowding_distance": Infinity,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 4,
+      "rank": 1,
+      "disassembly_complexity": 98.0,
+      "ergonomics": 101.0,
+      "crowding_distance": Infinity,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 5,
+      "rank": 1,
+      "disassembly_complexity": 920.0,
+      "ergonomics": 14.0,
+      "crowding_distance": 0.30069337208950253,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "solution_id": 6,
+      "rank": 1,
+      "disassembly_complexity": 668.0,
+      "ergonomics": 37.5,
+      "crowding_distance": 0.30069337208950253,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        5,
+        9,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 7,
+      "rank": 1,
+      "disassembly_complexity": 416.0,
+      "ergonomics": 61.0,
+      "crowding_distance": 0.30069337208950253,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        5,
+        9,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 8,
+      "rank": 1,
+      "disassembly_complexity": 575.0,
+      "ergonomics": 47.0,
+      "crowding_distance": 0.19876161928119418,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 9,
+      "rank": 1,
+      "disassembly_complexity": 509.0,
+      "ergonomics": 57.5,
+      "crowding_distance": 0.19876161928119418,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 10,
+      "rank": 1,
+      "disassembly_complexity": 350.0,
+      "ergonomics": 71.5,
+      "crowding_distance": 0.19876161928119418,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 11,
+      "rank": 1,
+      "disassembly_complexity": 257.0,
+      "ergonomics": 81.0,
+      "crowding_distance": 0.19876161928119418,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 12,
+      "rank": 1,
+      "disassembly_complexity": 191.0,
+      "ergonomics": 91.5,
+      "crowding_distance": 0.19876161928119418,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 13,
+      "rank": 1,
+      "disassembly_complexity": 827.0,
+      "ergonomics": 23.5,
+      "crowding_distance": 0.18886062918218427,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "solution_id": 14,
+      "rank": 1,
+      "disassembly_complexity": 827.0,
+      "ergonomics": 23.5,
+      "crowding_distance": 0.18886062918218427,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "solution_id": 15,
+      "rank": 1,
+      "disassembly_complexity": 986.0,
+      "ergonomics": 9.5,
+      "crowding_distance": 0.16133769340236775,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "solution_id": 16,
+      "rank": 1,
+      "disassembly_complexity": 734.0,
+      "ergonomics": 33.0,
+      "crowding_distance": 0.16133769340236775,
+      "disassembly_sequence": [
+        2,
+        4,
+        3,
+        7,
+        5,
+        10,
+        8,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "solution_id": 17,
+      "rank": 1,
+      "disassembly_complexity": 575.0,
+      "ergonomics": 47.0,
+      "crowding_distance": 0.16133769340236775,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        5,
+        9,
+        10,
+        8,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 18,
+      "rank": 1,
+      "disassembly_complexity": 350.0,
+      "ergonomics": 71.5,
+      "crowding_distance": 0.16133769340236775,
+      "disassembly_sequence": [
+        2,
+        7,
+        4,
+        3,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 19,
+      "rank": 1,
+      "disassembly_complexity": 257.0,
+      "ergonomics": 81.0,
+      "crowding_distance": 0.16133769340236775,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "solution_id": 20,
+      "rank": 1,
+      "disassembly_complexity": 191.0,
+      "ergonomics": 91.5,
+      "crowding_distance": 0.16133769340236775,
+      "disassembly_sequence": [
+        4,
+        2,
+        3,
+        7,
+        10,
+        8,
+        5,
+        9,
+        6,
+        1
+      ],
+      "human_robot_tasking": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# 算法配置参数文件
+# Algorithm Configuration Parameters
+
+################## NSGA-II算法配置参数 ##################
+NSGA_config:
+  # 群体大小：20~100
+  population_size: 20
+  # 遗传算法的终止进化代数：100~500
+  termination_condition: 250
+  # 交叉概率：0.4~0.99
+  crossover_probability: 0.5
+  # 变异概率：0.0001~0.1
+  mutation_probability: 0.01
+
+################## 进化策略配置 ##################
+evolution_config:
+  # 精英保留比例
+  elite_ratio: 0.1
+  # 锦标赛大小
+  tournament_size: 2
+  # 是否使用自适应参数
+  adaptive_parameters: false

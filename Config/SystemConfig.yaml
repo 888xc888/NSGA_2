@@ -1,0 +1,28 @@
+# 系统配置参数文件
+# System Configuration Parameters
+
+################## 系统配置参数 ##################
+system_config:
+  # 迭代结果保存频率
+  save_frequency: 10
+  # 是否输出图片
+  enable_plotting: true
+  # 输出目录
+  output_directory: "Output"
+  # 日志级别 (DEBUG, INFO, WARNING, ERROR)
+  log_level: "INFO"
+  # 是否显示进度条
+  show_progress: true
+  # 最大并行线程数
+  max_threads: 4
+
+################## 输出配置 ##################
+output_config:
+  # 保存最终结果
+  save_final_results: true
+  # 保存进化过程
+  save_evolution_history: true
+  # 结果文件格式 (json, csv, excel)
+  result_format: "json"
+  # 图像格式 (png, svg, pdf)
+  image_format: "png"

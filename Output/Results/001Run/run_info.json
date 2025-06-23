@@ -1,0 +1,19 @@
+{
+  "run_number": 1,
+  "folder_name": "001Run",
+  "creation_time": "2025-06-23T23:15:01.055703",
+  "description": "NSGA-II优化 - 20个帕累托解 - 13.8秒",
+  "moved_files": [
+    "best_solutions_20250623_231501.txt",
+    "convergence_curve_20250623_231459.png",
+    "pareto_front_gen_100_20250623_231452.png",
+    "pareto_front_gen_150_20250623_231454.png",
+    "pareto_front_gen_200_20250623_231457.png",
+    "pareto_front_gen_250_20250623_231459.png",
+    "pareto_front_gen_250_20250623_231500.png",
+    "pareto_front_gen_50_20250623_231449.png",
+    "evolution_history_20250623_231459.json",
+    "nsga_results_20250623_231459.json"
+  ],
+  "file_count": 10
+}

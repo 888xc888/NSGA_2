@@ -1,0 +1,80 @@
+# 评价指标数据文件
+# Evaluation Indicators Data
+
+################## 拆卸复杂性评价指标（专家评分数据） ##################
+disassembly_complexity:
+  description: "拆卸复杂度评价指标，使用三角模糊数表示"
+  operators:
+    0: "操作工"
+    1: "机器人"
+  
+  screw_normal:
+    description: "正常螺钉状态下的拆卸复杂度"
+    data:
+      #                normal状态
+      #  weights(权重)    tool(工具)        force(力度)
+      - [[1,2,3],       [1.5,3,4.5],     [1,2,3]]      # 操作工
+      - [[0.5,1,1.5],   [0.5,1,1.5],     [0.5,1,1.5]]  # 机器人
+  
+  screw_slippage:
+    description: "螺钉滑丝状态下的拆卸复杂度"
+    data:
+      #              中等滑丝                            严重滑丝
+      #  weights      tool         force       weights        tool         force
+      - [[1,2,3],     [1.5,3,4.5], [3,4.5,6],  [1,2,3],      [3,5,7],     [5,7,9]]     # 操作工
+      - [[0.5,1,1.5], [80,100,120], [1,1.5,2], [0.5,1,1.5],  [150,170,190], [1.5,2,2.5]] # 机器人
+  
+  screw_rust:
+    description: "螺钉生锈状态下的拆卸复杂度"
+    data:
+      #              中等生锈                           严重生锈
+      #  weights      tool         force       weights        tool         force
+      - [[1,2,3],     [1.5,3,4.5], [3,4.5,6],  [1,2,3],      [3,5,7],     [5,7,9]]     # 操作工
+      - [[0.5,1,1.5], [80,100,120], [1,1.5,2], [0.5,1,1.5],  [150,170,190], [1.5,2,2.5]] # 机器人
+
+################## 人体工程学评价指标（专家评分数据） ##################
+ergonomics:
+  description: "人体工程学评价指标，仅考虑操作工拆卸的情况"
+  evaluation_dimensions:
+    0: "用力强度 (Intensity of exertion)"
+    1: "用力持续时间 (Duration of exertion)"
+    2: "身体姿势 (Body posture)"
+    3: "工作速度 (Speed of work)"
+  
+  screw_normal:
+    description: "正常螺钉状态下的人体工程学评价"
+    data:
+      - [1]   # 用力强度
+      - [0.5] # 用力持续时间
+      - [1]   # 身体姿势
+      - [1]   # 工作速度
+  
+  screw_slippage:
+    description: "螺钉滑丝状态下的人体工程学评价"
+    data:
+      # [中等滑丝, 严重滑丝]
+      - [6,   13] # 用力强度
+      - [1,    3] # 用力持续时间
+      - [1.5,  3] # 身体姿势
+      - [1,    1] # 工作速度
+  
+  screw_rust:
+    description: "螺钉生锈状态下的人体工程学评价"
+    data:
+      # [中等生锈, 严重生锈]
+      - [6,   9] # 用力强度
+      - [1,   2] # 用力持续时间
+      - [1.5, 2] # 身体姿势
+      - [1,   1] # 工作速度
+
+################## 评价方法说明 ##################
+evaluation_methods:
+  triangular_fuzzy_number:
+    description: "三角模糊数评价方法"
+    formula: "重心法: (a + 2b + c) / 4"
+    notation: "三角模糊数 A(a,b,c) 其中 a≤b≤c"
+  
+  aggregation:
+    description: "多指标聚合方法"
+    complexity_aggregation: "各评价维度三角模糊数求和后计算重心"
+    ergonomics_aggregation: "仅考虑操作工拆卸的零件，各维度数值直接求和"
